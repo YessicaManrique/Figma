@@ -5,7 +5,7 @@
     }
 
     body {
-        background:black;
+        background:white;
         font-family: 'Macondo', cursive;
         font-family: 'Oleo Script Swash Caps', cursive;
         font-family: 'Roboto', sans-serif;
@@ -83,7 +83,7 @@
 
     a:focus,
     a:hover {
-        background-color: #575a57;
+        background-color: #7e857e;
         ;
         /*al darle clic hara el efecto con el focus de otro color,al pasar el cursor puede generar el efecto de color con hover */
         transition: .5s;
@@ -100,7 +100,7 @@
         /*tendra un tamaño de fuente de 25px*/
         float: right;
         /*hace q el chkbtn este a lado derecho*/
-        color: #050505;
+        color: white;
         /*agregar color*/
         line-height: 50px;
         /*una altura de 50px*/
@@ -138,7 +138,7 @@
 
     .banner-text {
         position: absolute;
-        color: #FFFFFF;
+        color: black;
         top: 37%;
         left: 50%;
         transform: translateX(0%) translateY(-45%);
