@@ -1,342 +1,259 @@
 {
-    padding: 0;
-    margin: 0;
+        padding: 0;
+        margin: 0;
 
-}
-body{
-    
-    font-family: 'Macondo', cursive;
-    font-family: 'Oleo Script Swash Caps', cursive;
-    font-family: 'Roboto', sans-serif;
-}
-nav{
-    position: relative;/*es para que la posicion sea relativa*/
-    z-index: 1; /* */
-}
-
-.navbar-menu{
-   background: #00AF1C   ; /*color de mi barra menu*/
-   height: 50px; /*altura de 50px*/
-   width: 100%; /*ancho 100%*/
-
-   position:fixed /*posicion fija*/
-}
-.logo{
-    position: absolute;
-    color:#FFFFFF;
-    font-size: 30px;/*TAMAÑO DE FUENTE 30Px*/
-    top:8px;/*se  ubicara abajo a 8Px*/
-    left: 5%;/*pero se ubicara a 5% a la derecha*/
-    font-weight: bold;/*grosor de la fuente en negrita*/
-}
-
-.navbar-menu ul{
-    float: right; /*hace q la lista flote a lado derecho*/
-    margin-right: 20px;/*tendra un margen al lado derecho de 20 px*/
-    list-style: none; /* para quitar las viñetas de la lista*/
-}
-
-
-.navoption li{
-    display: inline-block; /*alineado en bloque con display, para ponerlo horizontal*/
-    line-height: 20px;/*Linea de altura de 50px*/
-    margin:0 5px; /*margen 0 y ademas un margen 5px tanto como a lderecha e izquierda*/
-
-}
-
-.navoption li a{
-    color:#FFFFFF;/*darle color a la letra*/
-    text-decoration: none;/*le quitamos el efecto del hipervinculo*/
-    text-transform: uppercase;/*EL TEXTO ESTE EN MAYUSCULA*/
-    font-size: 20px;/*El tamaño de fuente sea de 20px*/
-    padding: 5px 10px;/*agregar relleno 5px al inferior y superior, ademas 10px a la derecha e izquierda*/
-    position: relative;/*posicion relativa*/
-
-    border-radius:3px; /*generas un borde de 3px*/
-}
-
-a:focus, a:hover{
-    background-color: #575a57;;/*al darle clic hara el efecto con el focus de otro color,al pasar el cursor puede generar el efecto de color con hover */
-    transition: .5s;/*El tiempo que hara el efecto es menos de 1 segundo (0.5s)*/
-}
-
-#check{
-    display: none;/*lo ocultamos el icono de check*/
-}
-
-.chekbtn{
-    font-size: 25px;/*tendra un tamaño de fuente de 25px*/
-    float: right;/*hace q el chkbtn este a lado derecho*/
-    color: #FFFFFF;/*agregar color*/
-    line-height: 50px;/*una altura de 50px*/
-    margin-right: 25px;/*margen derecho 25px*/
-    cursor: pointer;/*cuando pasa el cursor se convierte en un mano*/
-
-    /display: none;/*lo ocultamos el icono de check*/
-}
-
-section{
-    width: 100%; /*ocupara el 100% cada seccion*/
-}
-
-.banner {
-    height:122vh;/*la clase banner tendra una altura  de 97vh*/
-    position: relative;/*la clase tendra la posicion relativa*/
-    background-color: white;/*le damos color al fondo de color azul*/
-
-}
-.banner-content img{
-    margin: 5px 0;/*banner-content img tendra un margen de 5px superior e inferior y 0 px a los costados/
-    width: 100%;/*en ancho de esta imagen es del 100%/*/
-}
-
-
-.banner-text{
-    position: absolute;/banner text tendra posicion absoluta/
-    color:#FFFFFF;/color del texto es color blanco/
-    top:37%;/que el texto este en lo superior del 37 %/
-    left: 50%;/que se mueva a la derecha un 50%/
-    transform: translateX(0%) translateY(-45%);/*en base al eje x se movera el 0% y en base al eje y se movera al -45% */
-}
-
-.banner-text h2{
-    font-size: 45px;/tendra un tamaño de fuente de 45px/
-
-}
-
-.banner-text a{
-    display: block;/el enlace tendra un display block/
-    width:100px ;/tendra un ancho de 100px/
-    color: #F5F2F2;/definimos el color/
-    text-decoration: none;/le quitamos el hiprevinculo/
-    padding: 7px;/rellegano con 7px/
-    margin-top:10px;/tiene un margen de 10px/
-    border: 3px solid #f5f2f2;/*tendra un borde de 3px y un color solido */
-}
-
-.banner-text a:hover{
-    background-color: #F5F2F2; /el color de fondo sea de este color/
-    color: grey;/y el color de letra/
-}
-
-.about{
-    height: 97vh;/la clase about tendra una altura  de 97vh/
-    position:relative;/la clase banner tendra una posicion relatica/
-    background: #302d2d;/*tendra un background osea un fondo del color */
-    color: #f5f2f2;/*su color es */
-}
-
-.about-content{
-    width:100% ;/tendra un ancho mi about content del 100%/
-    hyphens: 100%;/tendra una altura del 100%/
-    padding: 30px 0;/un padding 30 px inferiror y superior y 0 a los costados/
-    text-align: center;/que el text este alineado centrado/
-}
-
-.about-content h2{
-    font-size: 45px;/mi h2 tendra tamaño fuente de 45px/
-    text-transform: uppercase;/cambiamos las letras a mayuscula/
-}
-
-.about-content p,
-.about-content h2{
-    padding: 10px 50px;/parrafo y h2 tendran un paddind 10px inferrior t superior y 50px a los extremos/
-}
-.about-img{
-    width: 100%;/tendra un ancho del 100%/
-    box-sizing: border-box;/cada elemento ocupe todo, cuando lo comprimo si o si, se siga manteniendo las imagenes/
-    margin-top: 30px;/un margin top de 30 px, separamos un poco mas/
-    padding: 0 50px;/un relleno con padding  0 inferiores y 50 px a los costados/
-}
-
-.about-imgx{
-    width: 33%;/cada conteneder y la imagen tendra un ancho de 33%, juntandolos/
-    float:left;/que todo esto este flotando a la izquierda/
-
-}
-.img-job{
-    width: 280px;/tendra un ancho las imagenes de 280px/
-    height: 280px;/tendra un alto de 180px/
-    display: block;/*tendra un display bloqueado */
-    margin-left: auto;/asigname un margen izquierdo en automatico/
-    margin-right: auto;/asigname un margen derecho en automatico/
-    padding-bottom: 15px;/un relleno inferior de 15px/
-   
-}
-.testimonios {
-    height:97vh ;/*la section testimonios tendra una altura de 97 vh*/
-    position: relative;/*tendra una posicion relativa*/
-    background:url(./img/fondo.jpg);/*colocamamos un fondo y elegimos la carpeta*/
-    background-size: cover;/*que el fondo ocupe todo el espacio que  se adapte a todo*/
-    background-color: fixed;/*para generar un background fijo y mover la pagina generando un efecto*/
-    color: #f5f2f2;/*se le asigna el color a los testimonios*/
-}
-
-.testimonios-content{
-    width: 100%;/le daremos un ancho del 100%/
-    height: 100%;/una altura del 100%/
-    padding: 30px 0;/un relleno de 30pxen superior e inferior y a los costados 0/
-    text-align: center;/text alineado en el medio/
-}
-.testimonios-content h2{
-    font-size: 45px;/el tamaño de mi fuente es de 45px/
-    text-transform: uppercase;/se convierte en mayusculas las letras/
-}
-.testimonios-content p,
-.testimonios-content h2{
-    padding: 10px 50px;/un relleno de 10px a interior y superior y a los costados 50px/
-
-}
-
-.testimonios-group{
-    width: 100%; /un ancho del 100%/
-    box-sizing: border-box; /que en la minima resolucion ocupe la misma fila/
-    margin-top: 30px;/el banner content un margen de 30px, para que la imagen se vea impulsada hacia adentro/
-    padding: 0 50px;/agregar relleno 0px al inferior y superior, ademas 50px a la derecha e izquierda/
-}
-
-.testimonios-card{
-width: 33%;/ocupe el 33% deancho/
-float: left;/este flotando al lado derecho/
-
-}
-
-.img-perfil{
-    width: 180px;/tendran un ancho de 180px/
-    height: 180px;/un alto de 180px/
-    border-radius: 50%;/un borde redondodo en las imagenes/
-    border: 3px solid white;/borde de 3px y color solido blanco/
-}
-
-.contacto{
-    height: 97vh;
-    position: relative;
-}
-
-.contacto-content{
-    width: 100%;
-    height: 100%;
-    padding: 30px 0;
-    text-align: center;
-}
-
-.contacto-content h2{
-    font-size: 45px;
-    text-transform: uppercase;
-}
-
-.contacto-content p, .contacto-content h2{
-    padding: 10px 50px;
-}
-
-.contacto-group{
-    width: 100%;
-    box-sizing: border-box;
-    margin-top:30px;
-    padding: 0 50px;
-}
-
-.form-contact{
-    width: 50%;
-    float: left;
-}
-
-.contacto-img{
-width: 50%;
-float: left;
-}
-
-.contacto-img img{
-    
-}
-@media(max-width:1024px){
-    .logo{
-        padding-left: 40px;/reducimos 40px al achicar la pantalla/
     }
 
-    .navoption li a{
-        font-size: 16px;/tendra un tamaño de fuente de 16px/
-        padding: 7px 10px; /agregar relleno 7px al inferior y superior, ademas 10px a la derecha e izquierda/
+    body {
+
+        font-family: 'Macondo', cursive;
+        font-family: 'Oleo Script Swash Caps', cursive;
+        font-family: 'Roboto', sans-serif;
     }
-    .banner{
-        height: 65vh;/tendra una altura el banner de 89vh/
+
+    nav {
+        position: relative;
+        /*es para que la posicion sea relativa*/
+        z-index: 1;
+        /* */
     }
+
+    .navbar-menu {
+        background: rgb(230, 184, 34);
+        /*color de mi barra menu*/
+        height: 50px;
+        /*altura de 50px*/
+        width: 100%;
+        /*ancho 100%*/
+
+        position: fixed
+            /*posicion fija*/
+    }
+
+    .logo {
+        position: absolute;
+        color: #FFFFFF;
+        font-size: 30px;
+        /*TAMAÑO DE FUENTE 30Px*/
+        top: 8px;
+        /*se  ubicara abajo a 8Px*/
+        left: 5%;
+        /*pero se ubicara a 5% a la derecha*/
+        font-weight: bold;
+        /*grosor de la fuente en negrita*/
+    }
+
+    .navbar-menu ul {
+        float: right;
+        /*hace q la lista flote a lado derecho*/
+        margin-right: 20px;
+        /*tendra un margen al lado derecho de 20 px*/
+        list-style: none;
+        /* para quitar las viñetas de la lista*/
+    }
+
+
+    .navoption li {
+        display: inline-block;
+        /*alineado en bloque con display, para ponerlo horizontal*/
+        line-height: 20px;
+        /*Linea de altura de 50px*/
+        margin: 0 5px;
+        /*margen 0 y ademas un margen 5px tanto como a lderecha e izquierda*/
+
+    }
+
+    .navoption li a {
+        color: #ffffff;
+        /*darle color a la letra*/
+        text-decoration: none;
+        /*le quitamos el efecto del hipervinculo*/
+        text-transform: uppercase;
+        /*EL TEXTO ESTE EN MAYUSCULA*/
+        font-size: 20px;
+        /*El tamaño de fuente sea de 20px*/
+        padding: 5px 10px;
+        /*agregar relleno 5px al inferior y superior, ademas 10px a la derecha e izquierda*/
+        position: relative;
+        /*posicion relativa*/
+
+        border-radius: 3px;
+        /*generas un borde de 3px*/
+    }
+
+    a:focus,
+    a:hover {
+        background-color: #575a57;
+        ;
+        /*al darle clic hara el efecto con el focus de otro color,al pasar el cursor puede generar el efecto de color con hover */
+        transition: .5s;
+        /*El tiempo que hara el efecto es menos de 1 segundo (0.5s)*/
+    }
+
+    #check {
+        display: none;
+        /*lo ocultamos el icono de check*/
+    }
+
+    .chekbtn {
+        font-size: 25px;
+        /*tendra un tamaño de fuente de 25px*/
+        float: right;
+        /*hace q el chkbtn este a lado derecho*/
+        color: #050505;
+        /*agregar color*/
+        line-height: 50px;
+        /*una altura de 50px*/
+        margin-right: 25px;
+        /*margen derecho 25px*/
+        cursor: pointer;
+        /*cuando pasa el cursor se convierte en un mano*/
+
+        /display: none;
+        /*lo ocultamos el icono de check*/
+    }
+
+    section {
+        width: 100%;
+        /*ocupara el 100% cada seccion*/
+    }
+
+    .banner {
+        height: 122vh;
+        /*la clase banner tendra una altura  de 97vh*/
+        position: relative;
+        /*la clase tendra la posicion relativa*/
+        background-color: rgb(199, 154, 6);
+        /*le damos color al fondo de color azul*/
+
+    }
+
     .banner-content img {
-        margin-top: 50px;/el banner content un margen de 50px, para que la imagen se vea impulsada hacia adentro/
-
-    } 
-    .about{
-        height: 100vh;/una altura de 100vh/
-    }
-    .img-job{
-        width: 210px;/imagen  se convierte en 210 px de ancho/
-        height: 210px;/imagen  se convierte en 210 px de alto/
-    }
-}
-@media(max-width:768px){
-    .checkbtn{
-        display: block;/* con esto indica que la clase checkbtn este en bloque*/
-    }
-    .navoption{
-        position:fixed;/* con esto indica que la clase navoption tendra un posicion fija*/
-        width: 100%;/* con esto indica que la clase navoption tendra un ancho del 100%*/
-        height: 100vh;/* con esto indica que la clase navoption tendra un alto del 100vh*/
-        background: #21427F;/AGREGAMOS COLOR/
-        top:50px;/LO Bajamos 50px/
-        Left: -100%;
-        text-align: center;/alineado al centro/
-        transition: 5s;/una transicion de 5segundos/
-
-    }
-    .navoption li{
-        display: block;/* con esto indica que la clase checkbtn este en bloque*/
-        border: 1px solid#f4f0f0;/* con esto indica que tendra un borde 1px y un color solido con un color asignado*/
-        z-index: 1;/*al pasarel scroll se vea animacion */
-    }
-/*
-    .navoption li a{
-        font-size: 18 px;/tendra un tamaño de fuente de 18px/
-
-    }
-    nav li:hover{
-        background-color: #EEEAEA;/*generar un efecto de color al fondo 
+        margin: 5px 0;
+        border-radius: 40%;
+        /*banner-content img tendra un margen de 5px superior e inferior y 0 px a los costados/
+    width: 100%;/*en ancho de esta imagen es del 100%/*/
     }
 
-    nav li a:hover{
-        color:#2F2E2E;/darle color/
-    }
-    #check:checked ~ ul{
-        left: 0;/esto hara el efecto que salga a lado izquierdo al dar clic en el icono, el simbolo lo sacas con alt +126/
-    }
-    .banner{
-        height: 42vh;/la altura de este banner sea de 55 vh/
-        
-    }
-    .banner-text h2{
-        font-size: 20px;/el texto tendra un tamaño de 30 px/
-        top:90px;/LO Bajamos 50px/
-    } 
 
-    .banner-text p{
-        font-size: 14px;/el parrafo tendra un tamaño de 14px/
-    }
-    .banner-text a{
-        font-size:14px ;/el enlace tiene un tamaño de 14px/
-        width: 60px;/el enlace tendra un ancho de 60 px/
-    }
-  
-    .about{
-        height: 165vh;/tendra una medida una altura de 165vh por el tema de columna de las imagenes/
-
+    .banner-text {
+        position: absolute;/banner text tendra posicion absoluta/ color: #FFFFFF;/color del texto es color blanco/ top: 37%;/que el texto este en lo superior del 37 %/ left: 50%;/que se mueva a la derecha un 50%/ transform: translateX(0%) translateY(-45%);
+        /*en base al eje x se movera el 0% y en base al eje y se movera al -45% */
     }
 
-    .about-content h2{
-        font-size: 35px;/su  tamaño fuente es de 35px/
+    .banner-text h2 {
+        font-size: 45px;/tendra un tamaño de fuente de 45px/
     }
 
-    .about-imgx{
-            width: 100%;/ocupar el 100% del ancho/
-            margin-bottom: 20px;/margen inferior de 20px*/
-
+    .banner-text a {
+        display: block;/el enlace tendra un display block/ width: 100px;/tendra un ancho de 100px/ color: #F5F2F2;/definimos el color/ text-decoration: none;/le quitamos el hiprevinculo/ padding: 7px;/rellegano con 7px/ margin-top: 10px;/tiene un margen de 10px/ border: 3px solid #f5f2f2;
+        /*tendra un borde de 3px y un color solido */
     }
-}
+
+    .banner-text a:hover {
+        background-color: #F5F2F2;/el color de fondo sea de este color/ color: grey;/y el color de letra/
+    }
+
+    .about {
+        height: 97vh;/la clase about tendra una altura de 97vh/ position: relative;/la clase banner tendra una posicion relatica/ background: #302d2d;
+        /*tendra un background osea un fondo del color */
+        color: #f5f2f2;
+        /*su color es */
+    }
+
+    .about-content {
+        width: 100%;
+        hyphens: 100%;
+        padding: 30px 0;
+        padding:30px;
+        text-align: center;
+        border-radius: 10%;
+    }
+
+    .about-content h2 {
+        font-size: 45px;/mi h2 tendra tamaño fuente de 45px/ text-transform: uppercase;/cambiamos las letras a mayuscula/
+    }
+
+    .about-content p,
+    .about-content h2 {
+        padding: 10px 50px;/parrafo y h2 tendran un paddind 10px inferrior t superior y 50px a los extremos/
+    }
+
+    .about-img {
+        width: 100%;
+        box-sizing:border-box;
+        margin-top: 30px;
+        padding: 0 50px;
+        border:#f4f0f0    }
+
+    .about-imgx {
+        width: 33%;/cada conteneder y la imagen tendra un ancho de 33%,
+        juntandolos/ float: left;/que todo esto este flotando a la izquierda/
+    }
+
+    .img-job {
+        width: 280px;/tendra un ancho las imagenes de 280px/ height: 280px;/tendra un alto de 180px/ display: block;
+        /*tendra un display bloqueado */
+        margin-left: auto;/asigname un margen izquierdo en automatico/ margin-right: auto;/asigname un margen derecho en automatico/ padding-bottom: 15px;/un relleno inferior de 15px/
+    }
+
+    .form-contact {
+        width: 50%;
+        float: left;
+    }
+
+    .contacto-img {
+        width: 50%;
+        float: left;
+    }
+
+    .contacto-img img {}
+
+    @media(max-width:1024px) {
+        .logo {
+            padding-left: 40px;/reducimos 40px al achicar la pantalla/
+        }
+
+        .navoption li a {
+            font-size: 16px;/tendra un tamaño de fuente de 16px/ padding: 7px 10px;/agregar relleno 7px al inferior y superior,
+            ademas 10px a la derecha e izquierda/
+        }
+
+        .banner {
+            height: 65vh;/tendra una altura el banner de 89vh/
+        }
+
+            
+        .img-job {
+            width: 210px;/imagen se convierte en 210 px de ancho/ height: 210px;/imagen se convierte en 210 px de alto/
+        }
+    }
+
+    @media(max-width:768px) {
+        .checkbtn {
+            display: block;
+            /* con esto indica que la clase checkbtn este en bloque*/
+        }*/
+
+        .navoption {
+            position: fixed;
+            /* con esto indica que la clase navoption tendra un posicion fija*/
+            width: 100%;
+            /* con esto indica que la clase navoption tendra un ancho del 100%*/
+            height: 100vh;
+            /* con esto indica que la clase navoption tendra un alto del 100vh*/
+            background: #21427F;/AGREGAMOS COLOR/ top: 50px;/LO Bajamos 50px/ Left: -100%;
+            text-align: center;/alineado al centro/ transition: 5s;/una transicion de 5segundos/
+        }
+
+        .navoption li {
+            display: block;
+            /* con esto indica que la clase checkbtn este en bloque*/
+            border: 1px solid#f4f0f0;
+            /* con esto indica que tendra un borde 1px y un color solido con un color asignado*/
+            z-index: 1;
+            /*al pasarel scroll se vea animacion */
+        }
+    }
+
+   
