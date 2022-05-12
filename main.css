@@ -5,7 +5,7 @@
     }
 
     body {
-
+        background:black;
         font-family: 'Macondo', cursive;
         font-family: 'Oleo Script Swash Caps', cursive;
         font-family: 'Roboto', sans-serif;
@@ -119,25 +119,29 @@
     }
 
     .banner {
-        height: 122vh;
+        height: 220vh;
         /*la clase banner tendra una altura  de 97vh*/
-        position: relative;
+        position: absolute;
         /*la clase tendra la posicion relativa*/
-        background-color: rgb(199, 154, 6);
+        /*background-color: rgb(199, 154, 6);
         /*le damos color al fondo de color azul*/
 
     }
 
     .banner-content img {
         margin: 5px 0;
-        border-radius: 40%;
+        border-radius: 300%;
         /*banner-content img tendra un margen de 5px superior e inferior y 0 px a los costados/
     width: 100%;/*en ancho de esta imagen es del 100%/*/
     }
 
 
     .banner-text {
-        position: absolute;/banner text tendra posicion absoluta/ color: #FFFFFF;/color del texto es color blanco/ top: 37%;/que el texto este en lo superior del 37 %/ left: 50%;/que se mueva a la derecha un 50%/ transform: translateX(0%) translateY(-45%);
+        position: absolute;
+        color: #FFFFFF;
+        top: 37%;
+        left: 50%;
+        transform: translateX(0%) translateY(-45%);
         /*en base al eje x se movera el 0% y en base al eje y se movera al -45% */
     }
 
